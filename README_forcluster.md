@@ -69,11 +69,11 @@ Copy that folder, where you want
 # Common errors and solutions
 At the start, while running Openpose there might be this error:
 
-  File "run_imagefolder.py", line 93, in <module>
-    results = main(image_paths, vis_dir, save_path=None)
-  File "/app/Openpose-video/testing/python/main.py", line 83, in main
-    heatmap_avg = heatmap_avg + heatmap / len(multiplier)
-    ValueError: operands could not be broadcast together with shapes (400,600,19) (400,600,38) 
+      File "run_imagefolder.py", line 93, in <module>
+        results = main(image_paths, vis_dir, save_path=None)
+      File "/app/Openpose-video/testing/python/main.py", line 83, in main
+        heatmap_avg = heatmap_avg + heatmap / len(multiplier)
+        ValueError: operands could not be broadcast together with shapes (400,600,19) (400,600,38) 
 
 
 if you see this, it's probably because you have too many apps and processes running on your computer/laptop. Just close as much procceses as possible and try to run it once again.
