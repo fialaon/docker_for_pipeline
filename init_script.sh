@@ -61,7 +61,7 @@ if (($ret==0)) ; then
 
     ###########################################################################
     #############***********************HMR***********************#############
-    conda activate hmr_p27
+    conda activate hmr_env
 
     img_dir=${data}/full_images/${image_folder}
     vis_dir=${data}/HMR
