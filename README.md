@@ -3,6 +3,8 @@ This is the base folder, it contains conda environments, basic scripts, readmes.
 
 1.        source build_script.sh
 
+Also, ask Jiri Sedlar for additional files for Mask_RCNN, there aren't public, so you will need to get them from him. (I'm talking about handtools *.h5 files especially).
+
 Then you should have all 4 folders in this one and everything should be set up in order for you to work on the docker image.
 
 # Building docker image
