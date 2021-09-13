@@ -30,6 +30,9 @@ rm models.tar.gz
 
 
 cd ..
+# make user-data
+mkdir -p user-data/raw/image_folder
+mkdir user-data/full_images
 echo SETUP FINISHED
 
 
