@@ -49,3 +49,4 @@ Example command:
 
            singularity build --sandbox pipeline/ docker://jamesbond/shake_shake:new_rep
 
+After this command is performed, you will have writable container built (and you can continue with README_forcluster.md).
