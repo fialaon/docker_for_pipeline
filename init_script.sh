@@ -105,7 +105,7 @@ if (($ret==0)) ; then
     #############***************contact recognizer****************#############
     mkdir /app/results
     mkdir /app/results/contact-recognizer
-    cp /app/user-data/full_images/${image_folder}/contact_states_annotation.pkl /app/results/contact-recognizer/contact-recognizer.pkl
+    cp /app/user-data/results/${image_folder}.pkl /app/results/contact-recognizer/contact-recognizer.pkl
 
     #############**********************HMR************************#############
     mkdir results/HMR

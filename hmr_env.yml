@@ -40,7 +40,7 @@ dependencies:
     - networkx==2.2
     - numpy==1.16.6
     - opencv-python==3.3.0.9
-    - opendr==0.78
+    - opendr==0.77
     - pillow==6.2.2
     - protobuf==3.17.3
     - pyparsing==2.4.7

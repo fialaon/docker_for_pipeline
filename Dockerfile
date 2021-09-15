@@ -11,7 +11,7 @@ SHELL ["/bin/bash", "--login", "-c"]
 # fixing errors
 
 RUN apt-get update ##[edited]
-RUN apt-get install ffmpeg libsm6 libxext6  -y
+RUN apt-get install ffmpeg libsm6 libxext6 libosmesa-dev libgl1-mesa-glx libgl1-mesa-dev -y
 
 RUN apt-get update
 RUN apt-get -y install gcc
@@ -23,7 +23,7 @@ RUN ["apt-get", "install", "-y", "vim"]
 
 RUN conda install git pip
 
-#create the environment for Openpose and contact-recognizer
+#create the environment for Openpose and contact-recognizer 
 COPY py3_env.yml .
 RUN conda env create -f py3_env.yml
 
@@ -76,6 +76,10 @@ RUN pip install mock==3.0.5
 RUN pip install networkx==2.2
 RUN pip install numpy==1.16.6
 RUN pip install opencv-python==3.3.0.9
+# needed for opendr
+RUN conda install -c anaconda mesa-libgl-cos6-x86_64
+RUN conda install -c anaconda libglu
+RUN conda install -c conda-forge freeglut
 RUN pip install opendr==0.77
 RUN pip install pillow==6.2.2
 RUN pip install protobuf==3.17.3
@@ -107,4 +111,4 @@ ADD check_res.py /app/
 ADD init_script.sh /app/
 
 #add user folder
-ADD user-data /app/
+ADD user-data /app/user-data
