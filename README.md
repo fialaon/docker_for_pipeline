@@ -22,6 +22,7 @@ If you want to run the docker image, just to test it before conversion to singul
 2.        docker run -tid --name <custom_name> <your_username>/<name_of_repository>:<tag>
 
 Once again example, names as previous, but now I want the running docker image be named as first_try. (If you don't give it the --name tag it will just name it somehow according to docker regulations - the name then can be found with the command: $ docker ps). My command then looks like this:
+
           docker run -tid --name first_try jamesbond/shake_shake:new_rep
 
 it will run in detached version, if you want to see the terminal inside the docker just use:
